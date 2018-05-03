@@ -1,4 +1,4 @@
-pragma solidity ^0.4.11;
+pragma solidity ^0.4.21;
 
 /**
  * The ERC722 contract
@@ -25,14 +25,8 @@ contract ERC722 {
 
     event Transfer(address indexed from, address indexed to, uint256 species, uint256 value);
     event Approval(address indexed owner, address indexed spender, uint256 species, uint256 value);
-    event NewSpecies(uint256 _speices, uint256 _supply, address _owner);
+    event NewSpecies(uint256 _speices, uint256 _supply, string _symbol, address _owner);
 
-    // Optinal
-    //function name()  public returns(string _name);
     //// Optinal
-    //function symbol()  public returns(string _symbol);
-    //// Optinal
-    //function speciesName()  public returns(string _name);
-    //// Optinal
-    //function speciesSymbol()  public returns(string _symbol); 
+    //function speciesSymbol(uint256 _species)  public view returns(string _symbol); 
 }
